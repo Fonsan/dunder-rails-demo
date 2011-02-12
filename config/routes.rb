@@ -1,4 +1,6 @@
 Demo::Application.routes.draw do
+  root to: "front#index"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
