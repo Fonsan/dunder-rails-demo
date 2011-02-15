@@ -1,4 +1,4 @@
-This app is using [dunder](https://github.com/Fonsan/dunder) to prove cocurrent database requests in rails. Dunder requires ruby 1.9.*
+This app is using [dunder](https://github.com/Fonsan/dunder) to prove concurrent database requests in rails. Dunder requires ruby 1.9.*
 
 	Started GET "/" for 127.0.0.1 at 2011-02-15 23:50:53 +0100
 	  Processing by FrontController#index as HTML
@@ -9,7 +9,6 @@ This app is using [dunder](https://github.com/Fonsan/dunder) to prove cocurrent 
 	
 
 
-It takes 1024.6ms to complete a request that does two queries a 1000.ms, queries scale!
+It takes 1024.6ms to complete a request that does two queries each taking 1000.ms, queries scale!
 
 If you run concurrent requests I recommend setting a higher value of pool in database.yml
-	
